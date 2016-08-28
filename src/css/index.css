@@ -1,0 +1,696 @@
+@CHARSET "UTF-8";
+
+
+@font-face{
+font-family: "Gatsby";
+src: url("../../resources/fonts/GatsbyFLF.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: 'LoomisSans';
+	src: url("../../resources/fonts/Loomis_Sans.ttf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Geoma';
+	src: url("../../resources/fonts/GeomaThinDemo.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Elcsa';
+	src: url("../../resources/fonts/Elcsa.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Enila';
+	src: url("../../resources/fonts/Enila.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Riesling';
+	src: url("../../resources/fonts/Riesling.ttf") format("TrueType");
+}
+
+body {
+	/*background: #353437;*/
+	margin-left: -0.2%;
+	width: 100.6%;
+	/*background: url("../images/purple-space-with-stars.jpg") no-repeat center center fixed; */
+	/*background-size: cover;*/
+}
+
+
+
+/*
+HEAD
+*/
+.titleLogo {
+
+	/*background: #B5B5B5;*/
+	/*opacity: 0.2;*/
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 3%;
+	margin-top: 0.1%;
+}
+
+.mainTitle {
+	/*opacity: 0;*/
+	font-family: Elcsa;
+	font-weight: bold;
+	font-size: 300%;
+	color: #ff000a;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.menuBar {
+/* 	position: fixed; */
+/* 	margin-top: 111px; */
+/* 	margin-left:-5px; */
+/* 	width: 97%; */
+	margin:-5px;
+	margin-left: -21px;
+	/*width: 104%;*/
+	display: block;
+	/*border: solid;*/
+	border-width: 1px;
+	border-top-color: white;
+	border-bottom-color: white;
+	/*background: gray;*/
+	height:1.5em;
+}
+
+.menuCont {
+/* 	position: absolute; */
+/* 	width: 100%; */
+/* 	z-index: 999; */
+	border: none;
+	margin-bottom: 5px;
+	height: 0.8em;
+}
+
+.menuItem {
+	display: block;
+	width: 5%;
+	height: 0px;
+	float:right;
+	margin-right: 8%;
+	margin-top: 0.1em;
+	margin-bottom: 0;
+	color: white;
+}
+
+.homeLink {
+	float: right;
+    text-decoration: none;
+    font-family: Geoma;
+    font-weight: bold;
+}
+
+.homeLink:link {
+	color: #c5a463;
+}
+
+.homeLink:visited {
+	color: #846342;
+}
+
+
+.logoutMessLink {
+    text-decoration: none;
+    font-family: Geoma;
+    font-weight: bold;
+}
+
+.logoutMessLink:link {
+	color: #c5a463;
+}
+
+.logoutMessLink:visited {
+	color: #846342;
+}
+
+.logoutMess {
+
+    width: 4%;
+    height: 0px;
+    float:right;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+    margin-right: 14%;
+    color: white;
+}
+
+.logoutBtn {
+	margin-right: 10%;
+	float: right;
+    border: none;
+    background-color: transparent;
+}
+
+.logoutIcon {
+    /*margin-top: 1px;*/
+    /*margin-left: 80%;*/
+
+    float: right;
+    margin-top:0.2em;
+	margin-left: 10%;
+    margin-right: 10%;
+    /*float:left;*/
+}
+
+.logoutImg {
+    height:20px;
+}
+
+.mobileCatMenu {
+	display: none;
+}
+
+.mobileMenuIcon {
+	font-size: 1.5em;
+}
+
+legend {
+	font-family: Elcsa;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-radius: 5px;
+	background: #B3B8C4;
+	border: solid;
+	border-color: #A57477;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+.cols{
+	margin-left: 0%;
+	min-width: 100px;
+}
+
+.cols:after {
+	position:absolute;
+/*	display:block; */
+	min-height:100%;
+
+}
+
+fieldset {
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+/* Tags */
+.tagCont{
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
+    border-radius: 3px;
+    width: 50px;
+    background-color: #848DAE;
+    float: right;
+    height: 100%;
+    text-align: center;
+}
+
+.catTextTag{
+    font-family: Geoma;
+    font-weight: bold;
+    font-size: 0.8em;
+	color: #c5a463;
+    text-decoration: none;
+    margin: 0;
+}
+
+.catTextTag:link{
+	color: #c5a463;
+}
+
+.catTextTag:visited{
+	color: #c5a463;
+}
+/* End Tags */
+
+/* Fields */
+.champtete {
+	border:none;
+/* 	position: fixed; */
+	width: 20%;
+	border-radius: 5px;
+	padding-bottom: 0%;
+	margin-left: 1%;
+/*  	margin:-1px; */
+	/*min-height: 5%;*/
+	background-image: url("../images/deep-blue-space1.jpg");
+
+}
+.champside {
+	border:none;
+	border-radius: 5px;
+	/*background: #888EC6;*/
+	float: left;
+	margin:5px;
+	margin-left: 2%;
+    width: 20%;
+}
+/* End Fields */
+
+/* Categories */
+.afficheTypeFilm {
+	font-family: Gatsby;
+	font-weight: bold;
+	font-size: 1.5em;
+	display: block;
+}
+
+.linkText {
+	display: block;
+	text-decoration: none;
+
+}
+
+.linkText:link{
+	color: #c5a463;
+}
+
+.linkText:visited{
+	color: #846342;
+}
+
+.catText {
+	/*color: #c5a463;*/
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.catText:hover {
+	color: #c5a463;
+	border: solid;
+	/* 	border-color: #A57477; */
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #fff;
+}
+
+/* End Categories */
+
+/* Films List */
+/*.divImage{*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*!*width: auto;*!*/
+	/*height: 100%;*/
+/*}*/
+
+/*.coverCont{*/
+
+/*}*/
+
+/*.cover {*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*width: auto;*/
+	/*height: 100%;*/
+	/*box-shadow: 0px 0px 10px rgba(0,0,0,0.9);*/
+/*}*/
+
+/*.cover:hover {*/
+	/*box-shadow: 0px 0px 40px #fff;*/
+/*}*/
+
+/*.filmListTitleTD{*/
+	/*background-color:grey;*/
+	/*border-top-right-radius: 5px;*/
+	/*border-top-left-radius: 5px;*/
+/*}*/
+
+/*.filmListFooter{*/
+	/*background-color:grey;*/
+	/*border-bottom-right-radius: 5px;*/
+	/*border-bottom-left-radius: 5px;*/
+/*}*/
+
+/*.resumTextOl{*/
+	/*margin-left: 4%;*/
+	/*margin-right: 10%;*/
+/*}*/
+/* End Films List */
+
+/*.divImageFicheFilm{*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*width: 200px;*/
+	/*height: auto;*/
+/*}*/
+
+/*.coverFicheFilm {*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*width: 200px;*/
+	/*height: auto;*/
+	/*box-shadow: 0px 0px 10px rgba(0,0,0,0.9);*/
+/*}*/
+
+/*.coverFicheFilm:hover {*/
+	/*box-shadow: 0px 0px 40px #fff;*/
+/*}*/
+
+.filmTitleLi {
+	list-style-type: none;
+	display: block;
+}
+
+.filmTitleC{
+	font-family: Geoma;
+	font-weight: bold;
+	/*font-size: 20px;*/
+	text-decoration: none;
+	margin: 0;
+}
+
+.filmTitleC:link{
+	color:black;
+}
+
+.champfilms {
+	border: none;
+	border-radius: 5px;
+	/*background: #888EC6;*/
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 60px;
+	margin-right: 0%;
+	width: 50%;
+	min-width: 278px;
+	text-align: justify;
+	/*padding-right:5%;*/
+}
+
+
+/* Fiche Film */
+.filmTitleH1{
+    /*border: solid;*/
+    /*border-width: 1px;*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.filmTitleCont{
+	text-align: center;
+	font-size: 80%;
+	margin:0;
+}
+/* End Fiche Film */
+
+/* Visitor's Block */
+.champPerso {
+    display: block;
+	border:none;
+	border-radius: 5px;
+	/*background: #888EC6;*/
+	float: left;
+	margin-left: 6px;
+	margin-top:23px;
+    width: 20%;
+	
+}
+
+.persoText {
+	text-align: center;
+}
+
+.helloMess {
+	width:100%;
+    background-color: #444355;
+	border: solid;
+	border-radius: 5px;
+	font-family: Geoma;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.userNameMess {
+	color: #92753e;
+}
+
+.btnLoginP {
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnLogin:hover {
+	cursor: pointer;
+}
+
+#btnLogin {
+	text-align: center;
+    background-color: transparent;
+    font-family: Gatsby;
+    font-weight: bold;
+    font-size: 1.2em;
+	color: #c5a463;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: solid;
+    border-color: #A57477;
+    border-radius: 5px;
+/*    width: 100%;
+    height: 100%;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; *//* Safari *//*
+    transition: width 2s, height 2s, transform 2s;*/
+}
+
+#btnLogin:hover {
+    box-shadow: 0px 0px 15px #fff;
+/*    width: 200%;
+    height: 200%;
+    -webkit-transform: rotate(180deg);  Safari
+    transform: rotate(180deg);*/
+}
+
+.textField {
+    border-radius: 10px;
+}
+
+#btnOkLogin {
+    background-color: #9E9DB0;
+    font-family: Geoma;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: solid;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#btnOkLogin:hover {
+    box-shadow: 0px 0px 15px #fff;
+}
+
+#btnSignin:hover {
+	cursor: pointer;
+}
+
+.btnSignupC {
+    background-color: transparent;
+    font-family: Gatsby;
+    font-weight: bold;
+    font-size: 1.2em;
+	color: #c5a463;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: solid;
+    border-color: #A57477;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+.btnSignupC:hover {
+    box-shadow: 0px 0px 15px #fff;
+}
+/* End Visitor's Block */
+
+/* Login Form Block */
+.loginBlock {
+    /*float:left;*/
+    text-align: center;
+}
+
+.signUpP {
+	background-color: transparent;
+    /*float:left;*/
+    text-align: center;
+}
+.signInText {
+	font-family: Gatsby;
+	font-weight: bold;
+	font-size: 1.2em;
+    color: #c5a463;
+	text-decoration: none;
+	background-color: transparent;
+	padding-left: 6px;
+	padding-right: 6px;
+	border: solid;
+    border-color: #A57477;
+	border-radius: 5px;
+}
+
+.signInText:hover {
+	box-shadow: 0px 0px 15px #fff;
+}
+/* End Login Form Block */
+
+/* Footer */
+.footer {
+	background:#A3ABD6;
+	border-top: solid;
+	border-color: gray;
+	opacity: 0.7;
+	display:block;
+	float:left;
+	/*position: fixed;*/
+	width: 100%;
+	bottom: 0;
+	left:0;
+	text-align: right;
+}
+
+.footText {
+	margin: 5px;
+	
+}
+/* End Footer */
+
+
+.windowOverCont {
+
+    border: solid;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 5px;
+    top: 10%;
+    /*bottom: auto;*/
+    left: 30%;
+    /*right: auto;*/
+    height: 420px;
+    width: 420px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.windowOverModal {
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f35798;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+#signin_modal{
+	position: fixed;
+	width: 150%;
+	height: 150%;
+	display:none;
+	margin-left: -50px;
+	margin-top: -50px;
+}
+
+.background_fixed{
+	background:#45463d;
+	background:rgba(0,0,0,0.5);
+	width: 150%; height: 150%;
+	position:fixed;
+}
+
+/* Register User (Sign Up)*/
+.form_modal{
+	margin-top: 10%;
+	margin-left: 15.1%;
+}
+
+.champ {
+    width: 800px;
+    background-color: #9E9DB0;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    border-radius: 5px;
+}
+
+
+.labelDiv {
+    border: solid;
+    width: 150px;
+
+}
+
+.labelForm {
+
+
+    padding-right: 20px;
+    width: 140px;
+    float: left;
+    text-align: right;
+}
+
+.textFieldForm {
+    height: 25px;
+    margin: 4px;
+
+}
+
+@media (max-width: 830px) {
+
+	.mobileCatMenu {
+		display: block;
+	}
+
+	.champtete {
+		width: 91%;
+		margin-left: 0%;
+	}
+
+	.menuBar {
+		float: right;
+		width: 100%;
+	}
+
+	.menuBtnsBlock {
+		width: 100%;
+	}
+
+	.logoutMess {
+
+	}
+
+	.champfilms {
+		width: 92%;
+	}
+
+    .champPerso{
+        background-color: #751d0c;
+        display: none;
+    }
+
+	#champside{
+		display: none;
+	}
+}
+
+@media (min-width: 830px) {
+	body{
+		background: #353437;
+	}
+}

@@ -1,0 +1,115 @@
+@CHARSET "utf-8";
+
+@font-face{
+font-family: "Gatsby";
+src: url("../../resources/fonts/GatsbyFLF.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: 'LoomisSans';
+	src: url("../../resources/fonts/Loomis_Sans.ttf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Geoma';
+	src: url("../../resources/fonts/GeomaThinDemo.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Elcsa';
+	src: url("../../resources/fonts/Elcsa.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Enila';
+	src: url("../../resources/fonts/Enila.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Riesling';
+	src: url("../../resources/fonts/Riesling.ttf") format("TrueType");
+}
+
+.modalFilms{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.divImage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: 5%;
+}
+
+.cover {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	max-width: 20px;
+	height: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+.cover:hover {
+	
+	box-shadow: 0px 0px 40px #fff;
+}
+
+/* .coverLone { */
+/* 	display: block; */
+/* 	margin-left: auto; */
+/*     margin-right: auto; */
+/* 	width: 200px;	 */
+/* } */
+
+.filmTitleC {
+	font-family: Gatsby;
+	font-weight: bold;
+	font-size: 3px;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.filmTitleC:hover {
+	border: solid;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #fff;
+}
+
+/* .filmTitleLone { */
+/* 	font-family: Gatsby; */
+/* 	font-weight: bold; */
+/* 	font-size: 1.5em; */
+/* 	text-decoration: none; */
+/* 	padding-left: 5px; */
+/* 	padding-right: 5px; */
+/* } */
+
+.filmTitleLi {
+	list-style-type: none;
+	display: block;
+}
+
+.resumText{
+	margin-right: 5%;
+}
+
+.btnBasketTop {
+	display: block;
+ 	margin-left: auto;
+/*     margin-right: auto; */
+    margin-bottom: 1.5em;
+	width: 150px;
+}
+
+.btnBasketBot {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 150px;
+}

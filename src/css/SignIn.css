@@ -1,0 +1,62 @@
+@CHARSET "utf-8";
+
+@font-face{
+font-family: "Gatsby";
+src: url("../../resources/fonts/GatsbyFLF.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: 'LoomisSans';
+	src: url("../../resources/fonts/Loomis_Sans.ttf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Geoma';
+	src: url("../../resources/fonts/GeomaThinDemo.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Elcsa';
+	src: url("../../resources/fonts/Elcsa.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Enila';
+	src: url("../../resources/fonts/Enila.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Riesling';
+	src: url("../../resources/fonts/Riesling.ttf") format("TrueType");
+}
+
+.champ {
+    width: 800px;
+	height: 320px;
+}
+
+
+.labelDiv {
+    border: solid;
+    width: 150px;
+
+}
+
+.labelForm {
+	margin-top: 7px;
+    padding-right: 20px;
+    width: 140px;
+    float: left;
+    text-align: right;
+}
+
+.textFieldForm {
+    height: 20px;
+    margin: 6px;
+
+}
+
+.formBtns {
+	float: right;
+	margin-right: 6%;
+}

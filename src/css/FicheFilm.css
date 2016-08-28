@@ -1,0 +1,255 @@
+@CHARSET "UTF-8";
+
+@font-face{
+font-family: "Gatsby";
+src: url("../../resources/fonts/GatsbyFLF.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: 'LoomisSans';
+	src: url("../../resources/fonts/Loomis_Sans.ttf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Geoma';
+	src: url("../../resources/fonts/GeomaThinDemo.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Elcsa';
+	src: url("../../resources/fonts/Elcsa.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Enila';
+	src: url("../../resources/fonts/Enila.otf") format("TrueType");
+}
+
+@font-face{
+	font-family: 'Riesling';
+	src: url("../../resources/fonts/Riesling.ttf") format("TrueType");
+}
+
+body {
+	
+	background: url("../images/purple-space-with-stars.jpg") no-repeat center center fixed; 
+	background-size: cover;
+}
+
+/*.titleLogo {
+
+	background: #B5B5B5;
+	opacity: 0.5;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 1px;
+	margin-top: 4px;
+}
+
+.mainTitle {
+	opacity: 1;
+	font-family: Elcsa;
+	font-weight: bold;
+	font-size: 5em;
+	color: #FF1123;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.menuBar {
+*//* 	position: fixed; *//*
+*//* 	margin-top: 111px; *//*
+*//* 	margin-left:-5px; *//*
+*//* 	width: 97%; *//*
+	margin:-5px;
+	margin-left: -21px;
+	width: 104%;
+	display: block;
+	border: solid;
+	border-width: 1px;
+	border-top-color: white;
+	border-bottom-color: white;
+	background: gray;
+	height:1.5em;
+}
+
+.menuCont {
+	border: none;
+	margin-bottom: 5px;
+	height: 0.8em;
+}
+
+.menuItem {
+
+    width: 5%;
+    height: 0px;
+    float:right;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+    color: white;
+}
+
+.homeLink {
+    text-decoration: none;
+    font-family: Geoma;
+    font-weight: bold;
+}
+
+legend {
+	font-family: Elcsa;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-radius: 5px;
+	background: #B3B8C4;
+	border: solid;
+	border-color: #A57477;
+}
+
+
+.cols {
+	position:absolute;
+*//*	display:block; *//*
+	min-height:100%;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+.champtete {
+	border:none;
+*//* 	position: fixed; *//*
+	width: 97%;
+	border-radius: 5px;
+	padding-bottom: none;
+	min-height: 10;
+	background-image: url("../images/deep-blue-space1.jpg");
+
+}
+.champside {
+	border:none;
+	border-radius: 5px;
+	background: #888EC6;
+	float: left;
+	margin:5px;
+    width: 200px;
+}*/
+
+/*.afficheTypeFilm {
+	font-family: Gatsby;
+	font-weight: bold;
+	font-size: 1.5em;
+*//*	display: block; *//*
+}
+
+.linkText {
+	text-decoration: none;
+}
+
+.champfilms2 {
+	border: none;
+	border-radius: 5px;
+	background: #888EC6;
+	float: left;
+	margin-top:23px;
+	margin-bottom: 60px;
+	width: 500px;
+	text-align: justify;
+	padding-right:40px;
+}*/
+
+.filmTitleLone {
+	display: block;
+	font-family: Gatsby;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.coverCont {
+/*    width: 0%;
+    padding-left: 0%;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);*/
+}
+.coverLone {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 200px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+    /*z-index: -2;*/
+}
+
+.btnAddBasket {
+    background-color: #9E9DB0;
+    font-family: Gatsby;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: solid;
+    border-color: #A57477;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.btnAddBasket:hover {
+box-shadow: 0px 0px 15px #fff;
+}
+
+.filmTitleLi {
+	list-style-type: none;
+}
+
+
+/*
+.champPerso {
+	border:none;
+	border-radius: 5px;
+	background: #888EC6;
+	float: left;
+	margin-left: 4px;
+	margin-top:23px;
+    width: 200px;	
+}
+
+.helloMess {
+	border: solid;
+	border-radius: 5px;
+	font-family: Geoma;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.signInText {
+	font-family: Gatsby;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding-left: 6px;
+	padding-right: 6px;
+	border: solid;
+	border-radius: 5px;
+}
+
+.signInText:hover {
+	box-shadow: 0px 0px 15px #fff;
+}
+
+.footer {
+	background:#A3ABD6;
+	border-top: solid;
+	border-color: gray;
+	opacity: 0.7;
+	display:block;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left:0;
+	text-align: right;
+}
+
+.footText {
+	margin: 5px;
+	
+}*/

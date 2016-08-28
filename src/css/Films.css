@@ -1,0 +1,77 @@
+@CHARSET "utf-8";
+
+@font-face{
+    font-family: "Gatsby";
+    src: url("../../resources/fonts/GatsbyFLF.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: 'LoomisSans';
+    src: url("../../resources/fonts/Loomis_Sans.ttf") format("TrueType");
+}
+
+@font-face{
+    font-family: 'Geoma';
+    src: url("../../resources/fonts/GeomaThinDemo.otf") format("TrueType");
+}
+
+@font-face{
+    font-family: 'Elcsa';
+    src: url("../../resources/fonts/Elcsa.otf") format("TrueType");
+}
+
+@font-face{
+    font-family: 'Enila';
+    src: url("../../resources/fonts/Enila.otf") format("TrueType");
+}
+
+@font-face{
+    font-family: 'Riesling';
+    src: url("../../resources/fonts/Riesling.ttf") format("TrueType");
+}
+
+.modalFilms{
+    margin-left: 0%;
+}
+
+.divImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: auto;*/
+    height: 100%;
+}
+
+.coverCont{
+
+}
+
+.cover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+.cover:hover {
+    box-shadow: 0px 0px 40px #fff;
+}
+
+.filmListTitleTD{
+    background-color:grey;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.filmListFooter{
+    background-color:grey;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.resumTextOl{
+    margin-left: 4%;
+    margin-right: 10%;
+}
