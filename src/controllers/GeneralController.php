@@ -9,26 +9,41 @@ include_once(DAO_PATH.'/SignInDAO.php');
 
 
 
+//Kint::dump($_POST);
 
 if (isset($_POST['btnOkLogin'])){
     $userAliasP = $_POST['loginIn'];
     $passUserP = $_POST['passwordIn'];
 
-    \VideoInit\dao\SignInDAO::openUserSession($userAliasP, $passUserP);
+    SignInDAO::openUserSession($userAliasP, $passUserP);
 }
-
-if (isset($_GET['action']) && $_GET['action']=="logout") {
-    session_unset();     // unset $_SESSION variable for the run-time
-    session_destroy();   // destroy session data in storage
-
-    echo $_SESSION['currentUserName']=null;
-    echo $_SESSION['currentUserID']=null;
-}
-
+//var_dump($_SESSION);
+//if (isset($_GET['action']) && $_GET['action']=="logout") {
+//    SignInDAO::closeUserSession();
+//    unset($_GET['action']);
+//    header("Location: index.php");
+//    echo "Test";
+//    if(isset($_SESSION['currentUserID'])) {
+//        echo "Now";
+//        $sessionUnset = session_unset();     // unset $_SESSION variable for the run-time
+//        $sessionDestroy = session_destroy();   // destroy session data in storage
+//    var_dump($sessionUnset);
+//        var_dump($sessionDestroy);
+//        echo $_SESSION['currentUserName'] = null;
+//        echo $_SESSION['currentUserID'] = null;
+//        if($sessionDestroy == true){
+//            header( 'Location: http://www.yoursite.com/new_page.html' );
+//
+//        }
+//    }
+//}
+//var_dump($_SESSION);
 if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1800)) {
     // last request was more than 30 minutes ago
-    session_unset();     // unset $_SESSION variable for the run-time
-    session_destroy();   // destroy session data in storage
+    $sessionUnset = session_unset();     // unset $_SESSION variable for the run-time
+    $sessionDestroy = session_destroy();   // destroy session data in storage
+
+
 }
 
 /*if (!isset($_SESSION['CREATED'])) {
@@ -40,26 +55,26 @@ if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 
 }*/
 // Get categories
 
-$listCategories = \VideoInit\dao\TypeFilmDAO::getListTypeFilm();
+$listCategories = TypeFilmDAO::getListTypeFilm();
 
 // Get user's Title choice
 if (isset($_GET['code_type_film'])) {
     $idTypeFilm = $_GET['code_type_film'];
-    $titleCenterColumn = \VideoInit\dao\FilmsDAO::getTitleCatType($idTypeFilm);
+    $titleCenterColumn = FilmsDAO::getTitleCatType($idTypeFilm);
 //    echo $titleCenterColumn;
 
-    $listFilms = \VideoInit\dao\FilmsDAO::getChoiceFilmsList($idTypeFilm);
+    $listFilms = FilmsDAO::getChoiceFilmsList($idTypeFilm);
 //    require_once(VIEW_PATH.'/GeneralLayoutVue.php');
 //    require_once(VIEW_PATH.'/FilmsVue.php');
 
 }else if (isset($_GET['id_film'])){
         $idFilm = $_GET['id_film'];
-        $listFilms = \VideoInit\dao\FicheFilmDAO::getOneFilm($idFilm);
+        $listFilms = FicheFilmDAO::getOneFilm($idFilm);
 //    require_once(VIEW_PATH.'/GeneralLayoutVue.php');
 //    require_once(VIEW_PATH.'/FicheFilmVue.php');
 
 } else {
-    $listFilms = \VideoInit\dao\FilmsDAO::getNouveautes();
+    $listFilms = FilmsDAO::getNouveautes();
 //    require_once(VIEW_PATH.'/GeneralLayoutVue.php');
     $titleCenterColumn = "New releases";
 }

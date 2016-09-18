@@ -1,46 +1,57 @@
 <?php
 
-namespace VideoInit\dao;
+//namespace VideoInit\dao;
 
 use VideoInit\model\TypeFilm;
+
 include_once('/../config.inc.php');
-include_once(DAO_PATH.'/Connect.php');
-include_once(MODEL_PATH.'/TypeFilm.php');
+include_once(DAO_PATH . '/Connect.php');
+include_once(MODEL_PATH . '/TypeFilm.php');
 
-class TypeFilmDAO {
+class TypeFilmDAO
+{
 
 
-public static function getListTypeFilm(){
-	
-	// connection BDD
-	$pdo = \Connect::getConnection();
-	
-	$sql = "SELECT * FROM typefilm;";
-			
-	$result = $pdo->query($sql);
+    public static function getListTypeFilm()
+    {
 
-	$result->setFetchMode(\PDO::FETCH_OBJ);
+        // connection BDD
+        $pdo = \Connect::getConnection();
 
-	$listCategories = array();
-		
-	// transformer recordset en tableau
-	while( $ligne = $result->fetch() ) // on récupère la liste 
-	{
-			$tFilm = new TypeFilm($ligne->CODE_TYPE_FILM, $ligne->LIB_TYPE_FILM);
+        $sql = "SELECT * FROM typefilm;";
 
-			array_push($listCategories, $tFilm);
-	}
-	
-	$result->closeCursor(); // on ferme le curseur des résultats
-		   
-	
+        $result = $pdo->query($sql);
 
-	return $listCategories;
-	
-	
+        $result->setFetchMode(\PDO::FETCH_OBJ);
+
+        $listCategories = array();
+
+        // transformer recordset en tableau
+        while ($ligne = $result->fetch()) // on récupère la liste
+        {
+            $tFilm = new TypeFilm($ligne->CODE_TYPE_FILM, $ligne->LIB_TYPE_FILM);
+
+            array_push($listCategories, $tFilm);
+        }
+
+        $result->closeCursor(); // on ferme le curseur des résultats
+
+
+        return $listCategories;
+
+
+    }
+
+    public static function getListTypeFilmLink()
+    {
+        $typeFilmsList = array();
+        $listTypeFilms = self::getListTypeFilm();
+
+        foreach ((array)$listTypeFilms as $typeFilmObject){
+            $typeFilmsList[$typeFilmObject->getLibelle()] = '../src/index.php?code_type_film='.$typeFilmObject->getCodeFilm();
+        }
+        return $typeFilmsList;
+    }
+
+
 }
-	
-	
-}
-
-?>

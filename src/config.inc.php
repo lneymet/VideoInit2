@@ -8,6 +8,7 @@ define('SQL_PASSWORD', '');
 
 
 define('SRC_PATH', dirname(__FILE__).'/');
+define('COMMON_PATH', dirname(__FILE__).'/common');
 define('CONTROLLERS_PATH', dirname(__FILE__).'/controllers');
 define('CSS_PATH', dirname(__FILE__).'/css');
 define('DAO_PATH', dirname(__FILE__).'/dao');

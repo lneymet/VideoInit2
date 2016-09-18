@@ -1,6 +1,6 @@
 <?php
 
-namespace VideoInit\dao;
+//namespace VideoInit\dao;
 
 use VideoInit\model\Films;
 
@@ -28,7 +28,7 @@ class FilmsDAO {
 		// transformer recordset en tableau
 		while( $ligne = $result->fetch() ) // on récupère la liste
 		{
-			$tFilm = new Films($ligne->ID_FILM, $ligne->CODE_TYPE_FILM, $ligne->TITRE_FILM, $ligne->ANNEE_FILM, $ligne->REF_IMAGE, $ligne->RESUME);
+			$tFilm = new Films($ligne->ID_FILM, $ligne->CODE_TYPE_FILM, $ligne->TITRE_FILM, $ligne->ANNEE_FILM, $ligne->REF_IMAGE, $ligne->resume);
 			array_push($tfilms, $tFilm);
 		}
 	
@@ -56,7 +56,7 @@ class FilmsDAO {
 		// transformer recordset en tableau
 		while( $ligne = $result->fetch() ) // on récupère la liste
 		{
-			$tFilm = new Films($ligne->ID_FILM, $ligne->CODE_TYPE_FILM, $ligne->TITRE_FILM, $ligne->ANNEE_FILM, $ligne->REF_IMAGE, $ligne->RESUME);
+			$tFilm = new Films($ligne->ID_FILM, $ligne->CODE_TYPE_FILM, $ligne->TITRE_FILM, $ligne->ANNEE_FILM, $ligne->REF_IMAGE, $ligne->resume);
 			array_push($tfilms, $tFilm);
 		}
 		
@@ -83,7 +83,7 @@ class FilmsDAO {
 		// transformer recordset en tableau
 		while( $ligne = $result->fetch() ) // on récupère la liste
 		{
-			$tFilm = new Films($ligne->ID_FILM, $ligne->CODE_TYPE_FILM, $ligne->TITRE_FILM, $ligne->ANNEE_FILM, $ligne->REF_IMAGE, $ligne->RESUME);
+			$tFilm = new Films($ligne->ID_FILM, $ligne->CODE_TYPE_FILM, $ligne->TITRE_FILM, $ligne->ANNEE_FILM, $ligne->REF_IMAGE, $ligne->resume);
 			array_push($tfilms, $tFilm);
 		}
 		

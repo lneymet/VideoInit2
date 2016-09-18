@@ -5,13 +5,15 @@
 ?>
 
 
-<link rel="stylesheet" href="../css/Films.css">
-<script src="jquery.js" type="text/javascript"></script>
-<script src="../../resources/jQuery.dotdotdot-master/src/jquery.dotdotdot.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/Films.css">
+<script src="../resources/jQuery.dotdotdot-master/src/jquery.dotdotdot.js"></script>
+<!--<script src="../../resources/jquery-3.1.0.js"></script>-->
+<!--<script src="../../resources/jQuery.dotdotdot-master/src/jquery.dotdotdot.min.js"></script>-->
 <script>
 	$(document).ready(function () {
 		$(".ellipsis").dotdotdot({
 			after: "a.readmore"
+            watch: "window"
 		});
 	});
 </script>
@@ -29,7 +31,7 @@
 		  </tr>
 		  <tr valign="top">
 			<td bgcolor="#aaa"  height="200">
-			<div class="ellipsis" style="height: 200px">
+			<div class="dot-ellipsis dot-resize-update" style="height: 200px">
 				<span class="resumText">'.$tf->getResume().'</span>
 				</div>
 			</td>

@@ -34,7 +34,7 @@ if (isset($_POST['submit'])){
  	if (display_error_message('login') == true && display_error_message('password') == true && display_error_message('nomUser') == true && display_error_message('prenUser') && display_error_message('ad1user'))
  	{
 
- 		if (\VideoInit\dao\SignInDAO::saveUserLogin() == true) {
+ 		if (SignInDAO::saveUserLogin() == true) {
  			echo  '<script type="text/javascript"> alert("Your profile has been succesfully saved.");</script>';
  		} else {
  			echo  '<script type="text/javascript"> alert("The alias you choose is already taken.");</script>';
@@ -49,10 +49,23 @@ if (isset($_POST['submit'])){
  <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="utf-8">
 
 	<link rel="stylesheet" href="css/SignIn.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../resources/jquery-ui-1.12.0/jquery-ui.theme.css">
+    <script src="../resources/jquery-3.1.0.js"></script>
+<!--        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script src="../resources/jquery-ui-1.12.0/jquery-ui.js"></script>
+<!--    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<!--    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>-->
+    <script>
+        $(function(){
+                $(".datepicker").datepicker();
+            });
 
+    </script>
 
 <title>Sign In</title>
 </head>
@@ -82,7 +95,7 @@ if (isset($_POST['submit'])){
             <div style="float: left">
 
                 <label for="ad1user" class="labelForm">Address:</label>
-                <input type="text" name="ad1user" id="ad1user" class="textFieldForm" size="30" maxlength="150" tabindex="6" /><br />
+                <input type="text" name="ad1user" id="ad1user" class="textFieldForm datepicker" size="30" maxlength="150" tabindex="6" /><br />
 
                 <label for="ad2user" class="labelForm">Address complement:</label>
                 <input type="text" name="ad2user" id="ad2user" class="textFieldForm" size="30" maxlength="150" tabindex="7" /><br />

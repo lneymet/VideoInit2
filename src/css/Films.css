@@ -74,4 +74,11 @@
 .resumTextOl{
     margin-left: 4%;
     margin-right: 10%;
+
+}
+
+.resumText{
+    font-family: "Letter Gothic Std";
+    /*font-weight: bold;*/
+    font-size: 0.9em;
 }

@@ -13,7 +13,7 @@ include_once(DAO_PATH.'/SignInDAO.php');
 //var_dump($_POST);
 
 //if(isset($_POST[''])){
-$signUp = \VideoInit\dao\SignInDAO::saveUserLogin();
+$signUp = SignInDAO::saveUserLogin();
 
 if($signUp == true){
     header('Location: /DevSessions/0TestPhp/VideoInit/src/index.php');
